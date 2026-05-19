@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVSS - Common Vulnerability Scoring System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1 class="glitch" data-text="CVSS">CVSS</h1>
+            <h2>Common Vulnerability Scoring System</h2>
+            <p>An open and universally standard way to rate the severity of security vulnerabilities in computer systems.</p>
+            <a href="#definition" class="btn">Explore <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">CVSS</div>
+            <ul class="nav-links">
+                <li><a href="#definition">Definition</a></li>
+                <li><a href="#objectives">Objectives</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#advantages">Advantages</a></li>
+                <li><a href="#example">Example & Tools</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="definition" class="section">
+            <div class="container">
+                <h2 class="section-title">Definition</h2>
+                <div class="content-box glass-panel">
+                    <p>CVSS is an industry standard designed to assess and communicate the severity of software vulnerabilities in a standardized way. It was initially developed under the direction of the National Infrastructure Advisory Council (NIAC) in 2003/2004 and was first released in February 2005.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="objectives" class="section bg-darker">
+            <div class="container">
+                <h2 class="section-title">Main Objective</h2>
+                <p class="section-subtitle">To provide an open and universally standard way to rate the severity of security vulnerabilities.</p>
+                <div class="grid-cards">
+                    <div class="card" data-tilt>
+                        <div class="icon"><i class="fas fa-ruler-combined"></i></div>
+                        <h3>Standard Assessment</h3>
+                        <p>Allows end users to understand the severity of a vulnerability through a numerical score from 0 to 10, facilitating objective comparison.</p>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h3>Severity, not Risk</h3>
+                        <p>Designed to measure technical severity (impact on confidentiality, integrity, availability) rather than actual exploitation risk.</p>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="icon"><i class="fas fa-sort-numeric-down"></i></div>
+                        <h3>Prioritization</h3>
+                        <p>Helps organizations prioritize the response and remediation of critical vulnerabilities based on the resulting score.</p>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="icon"><i class="fas fa-eye"></i></div>
+                        <h3>Transparency & Consistency</h3>
+                        <p>Maintains a common language among vendors, researchers, and consumers, eliminating threat communication ambiguity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="applications" class="section">
+            <div class="container">
+                <h2 class="section-title">Key Application Areas</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h3>Risk Prioritization</h3>
+                            <p>Helps organizations decide which vulnerabilities to fix first, integrating technical severity with asset criticality.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h3>Industry Standard</h3>
+                            <p>Universally used by databases like CVE (Common Vulnerabilities and Exposures) and NVD (National Vulnerability Database).</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h3>Diverse Environments</h3>
+                            <p>CVSS v4.0 explicitly covers IT, Operational Technology (OT), Industrial Control Systems (ICS), and IoT devices.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h3>Compliance and Reporting</h3>
+                            <p>Facilitates audit reports and regulatory compliance by providing measurable metrics to compare risks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages" class="section bg-darker">
+            <div class="container">
+                <h2 class="section-title">Advantages</h2>
+                <p class="section-subtitle">Developed and managed by FIRST, offering key benefits for cybersecurity.</p>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Standardization and Comparability</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Provides a common language and objective metrics to compare vulnerability severity across products, eliminating subjective manufacturer methods.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Efficient Prioritization</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>With scores from 0 to 10, it facilitates rapid identification of critical weaknesses, focusing resources on immediate risks.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Comprehensive Context</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Uses Base, Temporal, and Environmental metrics to evaluate intrinsic severity, patch availability, and specific environment impact.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Universal Adoption</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>An open, free, and widely used standard integrated with vulnerability management tools and public databases like NVD.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="example" class="section">
+            <div class="container split-section">
+                <div class="split-content glass-panel alert-box">
+                    <h3><i class="fas fa-bug"></i> Real Example</h3>
+                    <h4 class="highlight">Shellshock (CVE-2014-6271)</h4>
+                    <p>Obtained a base score of <strong>10.0</strong> in CVSS v3.0 due to its nature of remote code execution without privileges or user interaction.</p>
+                    <div class="score-display">10.0</div>
+                </div>
+                <div class="split-content glass-panel tool-box">
+                    <h3><i class="fas fa-tools"></i> Related Tools</h3>
+                    <h4>CVSS v4.0 Calculator</h4>
+                    <p>The most current tool, designed for the latest generation of the standard, available on the FIRST website.</p>
+                    <a href="https://www.first.org/cvss/calculator/4.0" target="_blank" class="btn btn-outline">Visit Calculator <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CVSS Information Page. Created for educational purposes.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
